@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Of Life</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="../Source/Bull_icon_RED.png" type="image/x-icon">
+
+</head>
+
+<body background="../Source/fondo.jpg">
+    <header>
+        <img src="../Source/header_GoL.png" alt="header generic">
+    </header>
+    <nav class="navegacion" style="background-color: white;">
+        <ulclass="menu">
+            <li>
+                <a href="#">Inicio</a>
+            </li>
+
+            <li>
+                <a href="../HTML/productos.html" target="_blank">Productos</a>
+            </li>
+
+            <li>
+                <a href="../HTML/formulario.html" target="_blank"> Registrate</a>
+            </li>
+
+            <li>
+                <a href="../HTML/proyecto.html" target="_blank">Proyectos</a>
+            </li>
+            
+            <li>
+                <a href="#">Datos Curiosos</a>
+            </li>
+
+            <li><a href="#">About Us</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="../HTML/presentacion_azucena.html" target="_blank">Azucena</a>
+                    </li>
+                    <li>
+                        <a href="../HTML/presentacion_mel.html" target="_blank">Melisa</a>
+                    </li>
+                    <li>
+                        <a href="../HTML/presentacion_pablo.html" target="_blank">Pablo</a>
+                    </li>
+                    
+                    <li>
+                        <a href="../HTML/Ghost.html" target="_blank">Compañero 4</a>
+                    </li>
+                    
+                    <li>
+                        <a href="../HTML/Ghost.html" target="_blank">Compañero 5</a>
+                    </li>
+
+                </ul>
+            </li>
+        </ulclass=>
+    </nav>
+     <section class="wrapper">
+         <section class="main">
+             <article style="background-color:white ;">
+
+                    <h1>TODO LO QUE TIENES QUE SABER SOBRE "EL JUEGO DE LA VIDA"</h1>
+                        <p>
+                            El Juego de la vida es un autómata celular diseñado por el matemático británico John Horton Conway
+                            en 1970. Es un juego de cero jugadores, en el que su evolución es determinada por un estado
+                            inicial, sin requerir intervención adicional. Se considera un sistema Turing completo que puede
+                            simular cualquier otra Máquina de Turing.
+                        </p>
+                        <p>    
+                            Desde su publicación, ha atraído mucho interés debido a la gran variabilidad de la evolución de los
+                            patrones. Se considera que el Juego de la vida es un buen ejemplo de emergencia y autoorganización.
+                            Es interesante para científicos, matemáticos, economistas y otros observar cómo patrones complejos
+                            pueden provenir de la implementación de reglas muy sencillas.
+                        </p>
+                        <p>
+                            El Juego de la vida tiene una variedad de patrones reconocidos que provienen de determinadas
+                            posiciones iniciales. Poco después de la publicación, se descubrieron el pentaminó R, el planeador
+                            o caminador (en inglés, glider, conjunto de células que se desplazan) y el explosionador (células
+                            que parecen formar la onda expansiva de una explosión), lo que atrajo un mayor interés hacia el
+                            juego. Contribuyó a su popularidad el hecho de que se publicó justo cuando se estaba lanzando al
+                            mercado una nueva generación de miniordenadores baratos, lo que significaba que se podía jugar
+                            durante horas en máquinas que, por otro lado, no se utilizarían por la noche.
+                        </p>
+                        <p>    
+                            Para muchos aficionados, el juego de la vida solo era un desafío de programación y una manera
+                            divertida de usar ciclos de la CPU 1 Para otros, sin embargo, el juego adquirió más connotaciones
+                            filosóficas.
+                        </p>
+                    
+                    <h2>Jugabilidad</h2>
+                        <p>
+                            Se trata de un juego de cero jugadores, lo que quiere decir que su evolución está determinada
+                            por el estado inicial y no necesita ninguna entrada de datos posterior. El "tablero de juego"
+                            es una malla plana formada por cuadrados (las "células") que se extiende por el infinito en
+                            todas las direcciones. Por tanto, cada célula tiene 8 células "vecinas", que son las que están
+                            próximas a ella, incluidas las diagonales. Las células tienen dos estados: están "vivas" o
+                            "muertas" (o "encendidas" y "apagadas"). El estado de las células evoluciona a lo largo de
+                            unidades de tiempo discretas (se podría decir que por turnos). El estado de todas las células
+                            se tiene en cuenta para calcular el estado de las mismas al turno siguiente. Todas las células
+                            se actualizan simultáneamente en cada turno, siguiendo estas reglas:
+                            <ul>
+                                <li>
+                                    Una célula muerta con exactamente 3 células vecinas vivas "nace" (es decir, al turno siguiente
+                                    estará viva).
+                                </li>
+                                <li>
+                                    Una célula viva con 2 o 3 células vecinas vivas sigue viva, en otro caso muere (por "soledad" o
+                                    "superpoblación").
+                                </li>                                    
+                            </ul>
+                        </p>
+                     
+                    <h3>LA COMPLEJIDAD MATEMATICA DEL JUEGO DE LA VIDA</h3>
+                        <p>
+                            Lo que empezó siendo un sencillo entretenimiento matemático ha llevado su aplicación como
+                            simulación de procesos físicos y biológicosReglas muy sencillas pueden dar lugar a
+                            comportamientos muy complejos. Si hubiera que resumir el juego de la vida (Game of Life o,
+                            simplemente Life) en una frase, esta sería su mejor descripción. Algo que describe lo que
+                            sucede cuando se aplica un sencillo conjunto de reglas a uno de los autómatas celulares más
+                            simples que se conocen. Décadas después todavía se sigue examinando hasta donde llega esa
+                            complejidad, y cuáles son las aplicaciones prácticas de esta construcción matemática y de otras
+                            similares.
+                        </p>
+                    
+             </article>
+         </section>
+     </section>
+<footer style="background-color: lightblue ;">©1981 GoL™  Todos los Derechos Reservados</footer>
+</body>
+
+</html>

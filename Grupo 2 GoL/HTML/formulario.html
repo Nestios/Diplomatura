@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body background="../Source/fondo.jpg">
+    <form
+        action="Space Invaders.php"
+        method="post"
+    >
+        <label for="usuario">Ingrese Usuario</label>
+        <input
+            type="text"
+            placeholder="Usuario"
+            id="usuario"
+        >
+        <br><br>
+        <label for="contraseña">Ingrese Contraseña</label>
+        <input
+            type="password"
+            placeholder="contraseña"
+            maxlength="8"
+            id="contraseña"
+        >
+        <br><br>
+        <label for="mail">Ingrese su e-mail</label>
+        <input
+            type="email"
+            placeholder="email"
+            id="mail"
+        >
+        <br><br>
+        <input
+            type="button"
+            value="Ingresar"
+        >
+        <br><br>
+        <label for="servidor">Seleccione El Servidor</label>
+        <select
+            name="servidor"
+            id="servidor"
+        >
+        <option value="EU">EU</option>
+        <option value="NA">NA</option>
+        <option value="LAS">LAS</option>
+        </select>
+    </form>
+</body>
+</html>
