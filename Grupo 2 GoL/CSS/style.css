@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../Source/fondo.jpg);
+}
+
+.navegacion {
+    width: max-content;
+    margin: 10px auto;
+    background: grey;
+
+}
+
+.navegacion>ul {
+    list-style: none;
+}
+
+.menu li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: rgb(51, 79, 236);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+}
+
+.menu li a :hover {
+    color: darkorange;
+    transition: all 3s;
+    -webkit-transition: all 3s;
+    -moz-transition: all 3s;
+    -ms-transition: all 3s;
+    -o-transition: all 3s;
+}
+
+.submenu {
+    position: absolute;
+    background: white;
+    width: 120%;
+    visibility: hidden;
+}
+
+.submenu li a {
+    display: block;
+    width: max-content;
+    padding: 15px;
+    color: rgb(72, 233, 72);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+}
+
+.menu li :hover {
+    color: violet;
+    transition: all .3s;
+}
+
+.submenu {
+    position: absolute;
+    background: lightcoral;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: turquoise;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+}
+
+.menu li :hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
