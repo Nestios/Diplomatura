@@ -8,7 +8,27 @@ cantPass=int(input("Cuantas Vamos a Crear? : "))
 largo=int(input("Que tan larga? : "))
 print("Vamos a Generar ",cantPass," Con un largo de ",largo,"caracteres.")
 conf=input("Estas Seguro? (Y/N).")
+"""
+Version 2 
+"""
+while conf == "Y" or "y":
+        cantPass=int(input("Cuantas Vamos a Crear? : "))
+        largo=int(input("Que tan larga? : "))
+        print("Vamos a Generar ",cantPass," Con un largo de ",largo,"caracteres.")
+        conf=input("¿Estas Seguro? (Y/N).")
+        if conf=="Y"or conf=="y" :
+            for i in range(cantPass):
+                pass_final="".join(random.sample(uso,largo))
+                print("\nContraseña ",i+1," ha sido Creada:\n\n\t===> ",pass_final)
+
+
+
+
+"""
+Version 1
+
 if conf=="Y"or conf=="y" :
     for i in range(cantPass):
         pass_final="".join(random.sample(uso,largo))
         print("\nContraseña ",i+1," ha sido Creada:\n\n\t===> ",pass_final)
+"""
