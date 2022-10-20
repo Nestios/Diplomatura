@@ -6,7 +6,7 @@ simCase="@#$%&/\?¿"
 uso=minusCase+mayusCase+numCase+simCase
 cantPass=int(input("Cuantas Vamos a Crear? : "))
 largo=int(input("Que tan larga? : "))
-print("Vamos a Generar ",cantPass," Con un largo de ",largo,"carateres.")
+print("Vamos a Generar ",cantPass," Con un largo de ",largo,"caracteres.")
 conf=input("Estas Seguro? (Y/N).")
 if conf=="Y"or conf=="y" :
     for i in range(cantPass):
